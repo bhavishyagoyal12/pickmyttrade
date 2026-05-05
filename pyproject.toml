@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pickmytrade"
+version = "1.0.0"
+description = "Community Python SDK for the PickMyTrade webhook API. Automate Tradovate, Interactive Brokers, Rithmic, ProjectX/TopstepX, TradeLocker, TradeStation, Binance, Bybit, and Match-Trader from Python."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+keywords = [
+    "pickmytrade",
+    "tradingview",
+    "trading",
+    "automation",
+    "tradovate",
+    "interactive-brokers",
+    "rithmic",
+    "topstepx",
+    "projectx",
+    "tradelocker",
+    "tradestation",
+    "binance",
+    "bybit",
+    "algorithmic-trading",
+    "webhook",
+    "futures",
+    "prop-firm",
+]
+authors = [
+    { name = "PickMyTrade Community" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "requests>=2.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-mock>=3.10",
+    "responses>=0.23",
+]
+
+[project.urls]
+"Homepage"      = "https://pickmytrade.io"
+"Documentation (.io)" = "https://docs.pickmytrade.io/docs/"
+"Documentation (.trade)" = "https://docs.pickmytrade.trade/docs/"
+"Source"        = "https://github.com/pickmytrade/pickmytrade-python"
+"Issue Tracker" = "https://github.com/pickmytrade/pickmytrade-python/issues"
+
+[tool.setuptools]
+py-modules = ["pickmytrade"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
